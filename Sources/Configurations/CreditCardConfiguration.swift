@@ -25,7 +25,7 @@ public struct CreditCardType: OptionSet, CustomStringConvertible {
     static let mastercard         = CreditCardType(rawValue: 1 << 5)
     static let visa               = CreditCardType(rawValue: 1 << 6)
     
-    static let all: CreditCardType = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
+    public static let all: CreditCardType = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
     static let allArray: [CreditCardType] = [.americanExpress, .dinersClub, .discover, .jcb, .maestro, .mastercard, .visa]
     
     /**
